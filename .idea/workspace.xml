@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="72d018a2-6610-4e48-8ae6-4a04981bcd9c" name="Changes" comment="HW_API_plus_UI">
+    <list default="true" id="72d018a2-6610-4e48-8ae6-4a04981bcd9c" name="Changes" comment="UI additional">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/SimpleUITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/SimpleUITest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,9 +22,17 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="API_2" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -39,8 +49,20 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;okolozakhara&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/okolozakhara/AQA_UI_API.git&quot;,
+    &quot;accountId&quot;: &quot;fe6204b3-2160-4bed-b901-39b67643f456&quot;
+  }
+}</component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
@@ -55,12 +77,18 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
     "Gradle.SimpleTest.executor": "Run",
     "Gradle.SimpleTest.userShouldBeAbleCreateUnicorn.executor": "Run",
     "Gradle.SimpleTest.userShouldBeAbleToChangeColor.executor": "Run",
     "Gradle.SimpleTest.userShouldBeAbleToDeleteUnicorn.executor": "Run",
     "Gradle.SimpleTest.userShouldBeAbleUnicorn.executor": "Run",
+    "Gradle.SimpleUITest.userCanCreateAccount.executor": "Run",
+    "Gradle.SimpleUITest.userCanNotCreateAccountWithNameAndSurnameOnly.executor": "Run",
     "Gradle.SimpleUITest.userTest.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
@@ -72,34 +100,11 @@
     "onboarding.tips.debug.path": "C:/Users/Zakhar/AquaProjects/API_2/src/main/java/org/example/Main.java",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.SimpleTest.userShouldBeAbleToDeleteUnicorn">
-    <configuration name="SimpleTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;org.example.SimpleTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Gradle.SimpleUITest.userCanNotCreateAccountWithNameAndSurnameOnly">
     <configuration name="SimpleTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -220,7 +225,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="SimpleTest.userShouldBeAbleUnicorn" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SimpleUITest.userCanCreateAccount" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -233,7 +238,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;org.example.SimpleTest.userShouldBeAbleUnicorn&quot;" />
+            <option value="&quot;org.example.SimpleUITest.userCanCreateAccount&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -244,7 +249,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="SimpleUITest.userTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SimpleUITest.userCanNotCreateAccountWithNameAndSurnameOnly" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -257,7 +262,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;org.example.SimpleUITest.userTest&quot;" />
+            <option value="&quot;org.example.SimpleUITest.userCanNotCreateAccountWithNameAndSurnameOnly&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -294,11 +299,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.SimpleUITest.userCanNotCreateAccountWithNameAndSurnameOnly" />
+        <item itemvalue="Gradle.SimpleUITest.userCanCreateAccount" />
         <item itemvalue="Gradle.SimpleTest.userShouldBeAbleToDeleteUnicorn" />
         <item itemvalue="Gradle.SimpleTest.userShouldBeAbleToChangeColor" />
         <item itemvalue="Gradle.SimpleTest.userShouldBeAbleCreateUnicorn" />
-        <item itemvalue="Gradle.SimpleUITest.userTest" />
-        <item itemvalue="Gradle.SimpleTest" />
       </list>
     </recent_temporary>
   </component>
@@ -319,7 +324,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727611239751</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="UI additional">
+      <option name="closed" value="true" />
+      <created>1727617457196</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1727617457196</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -327,7 +340,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="HW_API_plus_UI" />
-    <option name="LAST_COMMIT_MESSAGE" value="HW_API_plus_UI" />
+    <MESSAGE value="UI additional" />
+    <option name="LAST_COMMIT_MESSAGE" value="UI additional" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
