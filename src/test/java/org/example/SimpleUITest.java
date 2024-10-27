@@ -22,6 +22,9 @@ public class SimpleUITest {
         RegisterAccountPage registerAccountPage = new RegisterAccountPage();
         registerAccountPage.open();
 
+        // Генерация пароля, что бы повторить его потом
+        String password = RandomData.generatePassword();
+
         // Подготовка данных
 
         BankAccount bankAccount = BankAccount.builder()
@@ -30,11 +33,12 @@ public class SimpleUITest {
                 .address(RandomData.randomString())
                 .city(RandomData.randomString())
                 .state(RandomData.randomString())
-                .zipCode(RandomData.randomString())
+                .zipCode(RandomData.randomInt())
+                .phone(RandomData.randomInt())
                 .ssn(RandomData.randomString())
                 .userName(RandomData.randomString())
-                .password("111222333444")
-                .repeatedPassword("111222333444")
+                .password(password)
+                .repeatedPassword(password)
                 .build();
 
         // Шаги теста
