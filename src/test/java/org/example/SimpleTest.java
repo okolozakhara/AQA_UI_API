@@ -18,7 +18,7 @@ public class SimpleTest {
     @BeforeAll
     public static void setupTests() {
         RestAssured.filters(new RequestLoggingFilter(), new ResponseLoggingFilter());
-        RestAssured.baseURI = "https://crudcrud.com/api/816c1a479c7e42949356d5ca7bf8f7ef";
+        RestAssured.baseURI = "https://crudcrud.com/api/5db6f6055bcc42e198f0349b952e96ed";
     }
 
     @Test
@@ -44,7 +44,7 @@ public class SimpleTest {
 
     @Test
     public void userShouldBeAbleToChangeColor() {
-        Unicorn unicorn = new Unicorn("Pegas1", "Purple");
+        Unicorn unicorn = new Unicorn("Pegas11", "Purple");
         String id = UnicornRequests.createUnicorn(unicorn.toJson());
 
         UnicornRequests.changeColor(id, "Pink");

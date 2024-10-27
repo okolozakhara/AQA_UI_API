@@ -30,7 +30,7 @@ public class RegisterAccountPage {
 
     private SelenideElement passwordInput = element(Selectors.byId("customer.password"));
 
-    private SelenideElement repeatedPasswordInput = element(Selectors.byId("repeated.password"));
+    private SelenideElement repeatedPasswordInput = element(Selectors.byId("repeatedPassword"));
 
     private SelenideElement registerButton = element(Selectors.byValue("Register"));
 
@@ -52,6 +52,9 @@ public class RegisterAccountPage {
 
     private SelenideElement repeatedPasswordError = element(Selectors.byId("repeatedPassword.errors"));
 
+    private SelenideElement welcome = element(Selectors.byClassName("title"));
+
+
     // Методы
 
     public void open() {
@@ -65,6 +68,10 @@ public class RegisterAccountPage {
         if (bankAccount.getLastName() != null) {
             lastNameInput.sendKeys(bankAccount.getLastName());
         }
+        if (bankAccount.getAddress() != null) {
+            addressInput.sendKeys(bankAccount.getAddress());
+        }
+
         if (bankAccount.getCity() != null) {
             cityInput.sendKeys(bankAccount.getCity());
         }
@@ -73,6 +80,9 @@ public class RegisterAccountPage {
         }
         if (bankAccount.getZipCode() != null) {
             zipCodeInput.sendKeys(bankAccount.getZipCode());
+        }
+        if (bankAccount.getPhone() != null) {
+            phoneInput.sendKeys(bankAccount.getPhone());
         }
         if (bankAccount.getSsn() != null) {
             ssnInput.sendKeys(bankAccount.getSsn());
@@ -83,13 +93,9 @@ public class RegisterAccountPage {
         if (bankAccount.getPassword() != null) {
             passwordInput.sendKeys(bankAccount.getPassword());
         }
-        if (bankAccount.getRepeatPassword() != null) {
-            repeatedPasswordInput.sendKeys(bankAccount.getRepeatPassword());
-        }
-        if (bankAccount.getAddress() != null) {
-            addressInput.sendKeys(bankAccount.getAddress());
+        if (bankAccount.getRepeatedPassword() != null) {
+            repeatedPasswordInput.sendKeys(bankAccount.getRepeatedPassword());
         }
         registerButton.click();
-
-    }
+        }
 }

@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="72d018a2-6610-4e48-8ae6-4a04981bcd9c" name="Changes" comment="UI additional">
+    <list default="true" id="72d018a2-6610-4e48-8ae6-4a04981bcd9c" name="Changes" comment="UI optimization">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/SimpleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/SimpleTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/SimpleUITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/SimpleUITest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/ui/datas/BankAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/ui/datas/BankAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/ui/pages/RegisterAccountPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/ui/pages/RegisterAccountPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +85,7 @@
     "Gradle.SimpleTest.userShouldBeAbleToChangeColor.executor": "Run",
     "Gradle.SimpleTest.userShouldBeAbleToDeleteUnicorn.executor": "Run",
     "Gradle.SimpleTest.userShouldBeAbleUnicorn.executor": "Run",
+    "Gradle.SimpleUITest.executor": "Run",
     "Gradle.SimpleUITest.userCanCreateAccount.executor": "Run",
     "Gradle.SimpleUITest.userCanNotCreateAccountWithNameAndSurnameOnly.executor": "Run",
     "Gradle.SimpleUITest.userTest.executor": "Run",
@@ -104,7 +107,7 @@
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.SimpleUITest.userCanNotCreateAccountWithNameAndSurnameOnly">
+  <component name="RunManager" selected="Gradle.SimpleUITest.userCanCreateAccount">
     <configuration name="SimpleTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -119,54 +122,6 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;org.example.SimpleTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="SimpleTest.userShouldBeAbleCreateUnicorn" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;org.example.SimpleTest.userShouldBeAbleCreateUnicorn&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="SimpleTest.userShouldBeAbleCreateUnicorn" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;org.example.SimpleTest.userShouldBeAbleCreateUnicorn&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -201,7 +156,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="SimpleTest.userShouldBeAbleToDeleteUnicorn" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SimpleUITest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -214,7 +169,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;org.example.SimpleTest.userShouldBeAbleToDeleteUnicorn&quot;" />
+            <option value="&quot;org.example.SimpleUITest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -273,37 +228,13 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="SimpleUITest.userTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;org.example.SimpleUITest.userTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.SimpleUITest.userCanNotCreateAccountWithNameAndSurnameOnly" />
         <item itemvalue="Gradle.SimpleUITest.userCanCreateAccount" />
-        <item itemvalue="Gradle.SimpleTest.userShouldBeAbleToDeleteUnicorn" />
+        <item itemvalue="Gradle.SimpleUITest.userCanNotCreateAccountWithNameAndSurnameOnly" />
         <item itemvalue="Gradle.SimpleTest.userShouldBeAbleToChangeColor" />
-        <item itemvalue="Gradle.SimpleTest.userShouldBeAbleCreateUnicorn" />
+        <item itemvalue="Gradle.SimpleTest" />
+        <item itemvalue="Gradle.SimpleUITest" />
       </list>
     </recent_temporary>
   </component>
@@ -332,7 +263,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727617457196</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="UI optimization">
+      <option name="closed" value="true" />
+      <created>1728233860195</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1728233860195</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -341,7 +280,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="HW_API_plus_UI" />
     <MESSAGE value="UI additional" />
-    <option name="LAST_COMMIT_MESSAGE" value="UI additional" />
+    <MESSAGE value="UI optimization" />
+    <option name="LAST_COMMIT_MESSAGE" value="UI optimization" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -350,6 +290,16 @@
           <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
           <line>13</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/example/SimpleUITest.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/example/SimpleUITest.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

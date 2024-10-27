@@ -18,6 +18,35 @@ public class SimpleUITest {
     }
 
     @Test
+    public void userCanCreateAccount() {
+        RegisterAccountPage registerAccountPage = new RegisterAccountPage();
+        registerAccountPage.open();
+
+        // Подготовка данных
+
+        BankAccount bankAccount = BankAccount.builder()
+                .firstName(RandomData.randomString())
+                .lastName(RandomData.randomString())
+                .address(RandomData.randomString())
+                .city(RandomData.randomString())
+                .state(RandomData.randomString())
+                .zipCode(RandomData.randomString())
+                .ssn(RandomData.randomString())
+                .userName(RandomData.randomString())
+                .password("111222333444")
+                .repeatedPassword("111222333444")
+                .build();
+
+        // Шаги теста
+        registerAccountPage.register(bankAccount);
+
+        // Проверка ожидаемого результата
+
+        registerAccountPage.getWelcome().shouldHave(Condition.text("Welcome "));
+
+    }
+
+    @Test
     public void userCanNotCreateAccountWithNameAndSurnameOnly() {
 
         // Подготовка страницы
